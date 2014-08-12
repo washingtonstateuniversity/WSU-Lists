@@ -9,6 +9,7 @@ network:
     nameserver 8.8.4.4
 
 wsu-lists-config:
+  server_name: lists.wsu.dev
   database: wsu_lists
   db_user: wsu_lists
   db_pass: wsu_lists
