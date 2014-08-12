@@ -14,3 +14,4 @@ wsu-lists-config:
   db_pass: wsu_lists
   db_host: 127.0.0.1
   mailer_host: smtp.wsu.edu
+  test_mode: 1
