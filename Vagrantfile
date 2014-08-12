@@ -123,7 +123,8 @@ ERRORSS
     cp -fr /tmp/wsu-web/provision/salt /srv/
     cp /tmp/wsu-web/provision/salt/config/local.yum.conf /etc/yum.conf
     sh /tmp/wsu-web/provision/bootstrap_salt.sh -K stable
-    cp /tmp/wsu-web/provision/salt/minions/wsuwp.conf /etc/salt/minion.d/
+    rm /etc/salt/minion.d/*.conf
+    cp /tmp/wsu-web/provision/salt/minions/wsu-lists.conf /etc/salt/minion.d/
     salt-call --local --log-level=info --config-dir=/etc/salt state.highstate
 SCRIPT
 

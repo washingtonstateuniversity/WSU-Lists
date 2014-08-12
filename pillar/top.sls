@@ -1,1 +1,4 @@
-top.sls
+base:
+  '*':
+    - network
+    - mysql
