@@ -3,14 +3,14 @@
 /*
 
 * ==============================================================================================================
-* 
-* 
-* The minimum requirements to get phpList working are in this file. 
+*
+*
+* The minimum requirements to get phpList working are in this file.
 * If you are interested in tweaking more options, check out the config_extended.php file
 * or visit http://resources.phplist.com/system/config
-* 
+*
 * ** NOTE: To use options from config_extended.php, you need to copy them to this file **
-* 
+*
 ==============================================================================================================
 
 */
@@ -29,7 +29,7 @@ $database_password = 'phplist';
 
 # if you have an SMTP server, set it here. Otherwise it will use the normal php mail() function
 ## if your SMTP server is called "smtp.mydomain.com" you enter this below like this:
-## 
+##
 ##     define("PHPMAILERHOST",'smtp.mydomain.com');
 
 define("PHPMAILERHOST",'smtp.wsu.edu');
@@ -45,19 +45,19 @@ define ("TEST",1);
 /*
 
 ==============================================================================================================
-* 
+*
 * Settings for handling bounces
-* 
-* This section is OPTIONAL, and not necessary to send out mailings, but it is highly recommended to correctly 
+*
+* This section is OPTIONAL, and not necessary to send out mailings, but it is highly recommended to correctly
 * set up bounce processing. Without processing of bounces your system will end up sending large amounts of
 * unnecessary messages, which overloads your own server, the receiving servers and internet traffic as a whole
-* 
+*
 ==============================================================================================================
 
 */
 
-# Message envelope. 
-# 
+# Message envelope.
+#
 # This is the address that most bounces will be delivered to
 # Your should make this an address that no PERSON reads
 # but a mailbox that phpList can empty every so often, to process the bounces
